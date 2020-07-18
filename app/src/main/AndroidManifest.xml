@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.brethren.taranim"
+    android:versionCode="3"
+    android:versionName="3.0">
+
+    <uses-sdk
+        android:targetSdkVersion="28" />
+
+    <application
+        android:name=".TaranimApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SongActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SongVersesActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/app_name"></activity>
+    </application>
+
+</manifest>
